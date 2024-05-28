@@ -1,0 +1,20 @@
+<div class="container pt-3">
+  <div class="row">
+    <table border="1">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of dataSource" [ngClass]="getRowClass(row.count)">
+      <td>{{ row.name }}</td>
+      <td>{{ row.count }}</td>
+    </tr>
+  </tbody>
+  </table>  
+  
+</div>
+</div>
+
